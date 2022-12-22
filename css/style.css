@@ -144,6 +144,7 @@ button:hover {
 }
 
 @media screen and (max-width: 1280px) {
+
     .first,
     .second {
         font-size: 12px;
