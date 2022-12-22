@@ -156,7 +156,7 @@ button:hover {
 
 @media screen and (max-width: 464px) {
     .navbar {
-        margin: 0px;
+        margin-top: 10px;
     }
 
     .navbar>ul {
