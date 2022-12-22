@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Satisfy&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181E36;
+    background-image: url("../img/background/background.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.navbar>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar>ul>li{
+    display: flex;
+    margin-right: 36px;
+}
+
+.navbar>ul>li:last-child{
+    margin-left: 0px;
+}
+
+.navbar>ul>li>a{
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #C1C1C1;
+    padding: 10px;
+    transition: color 0.2s linear;
+}
+
+.navbar>ul>li>a::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #FFD700;
+    height: 2px;
+    width: 0%;
+    transition: width 0.2s linear;
+}
+
+.navbar>ul>li>a:hover{
+    color: #FFD700;
+}
+
+.navbar>ul>li>a:hover::before{
+    color: #FFD700;
+    width: 100%;
+}
+
