@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Satisfy&display=swap");
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #181E36;
     background-image: url("../img/background/background.png");
     background-position: center top;
@@ -17,7 +17,15 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-.navbar{
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,7 +33,7 @@ body{
     margin-top: 64px;
 }
 
-.navbar>ul{
+.navbar>ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -33,16 +41,16 @@ body{
     list-style-type: none;
 }
 
-.navbar>ul>li{
+.navbar>ul>li {
     display: flex;
     margin-right: 36px;
 }
 
-.navbar>ul>li:last-child{
+.navbar>ul>li:last-child {
     margin-left: 0px;
 }
 
-.navbar>ul>li>a{
+.navbar>ul>li>a {
     position: relative;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
@@ -52,7 +60,7 @@ body{
     transition: color 0.2s linear;
 }
 
-.navbar>ul>li>a::before{
+.navbar>ul>li>a::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -63,12 +71,74 @@ body{
     transition: width 0.2s linear;
 }
 
-.navbar>ul>li>a:hover{
-    color: #FFD700;
+.navbar>ul>li>a::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #FFD700;
+    height: 2px;
+    width: 0%;
+    transition: width 0.2s linear;
 }
 
-.navbar>ul>li>a:hover::before{
+.navbar>ul>li>a:hover::before {
     color: #FFD700;
     width: 100%;
 }
 
+.navbar>ul>li>a:hover::after {
+    color: #FFD700;
+    width: 100%;
+}
+
+.navbar>ul>li>a:hover {
+    color: #FFD700;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin-top: 64px;
+}
+
+.first {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #FFD700;
+}
+
+.main>h1 {
+    font-family: "Satisfy", cursive;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 128px;
+    color: #FFD700;
+}
+
+.second {
+    text-align: center;
+    font-size: 16px;
+    color: #C1C1C1;
+}
+
+button {
+    margin: 32px 0px;
+    border: none;
+    background-color: #91680A;
+    border-radius: 20px;
+    padding: 12px 35px;
+    color: #C1C1C1;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button:hover {
+    background-color: #644807;
+}
