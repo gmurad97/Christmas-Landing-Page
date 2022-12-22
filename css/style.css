@@ -7,11 +7,12 @@
 }
 
 body {
-    background-color: #181E36;
+    background-color: #131828;
     background-image: url("../img/background/background.png");
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
     font-family: "Open Sans", sans-serif;
@@ -22,7 +23,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .navbar {
@@ -47,7 +47,7 @@ body {
 }
 
 .navbar>ul>li:last-child {
-    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .navbar>ul>li>a {
@@ -101,7 +101,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 550px;
+    max-width: 550px;
     margin-top: 64px;
 }
 
@@ -141,4 +141,47 @@ button {
 
 button:hover {
     background-color: #644807;
+}
+
+@media screen and (max-width: 1280px) {
+    .first,
+    .second {
+        font-size: 12px;
+    }
+
+    .main>h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .navbar {
+        margin: 0px;
+    }
+
+    .navbar>ul {
+        flex-direction: column;
+    }
+
+    .navbar>ul>li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .navbar>ul>li:last-child {
+        margin: 0px;
+    }
+
+    .main {
+        margin: 36px;
+    }
+
+    .first,
+    .second {
+        font-size: 10px;
+    }
+
+    .main>h1 {
+        font-size: 40px;
+    }
 }
